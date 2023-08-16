@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+ 
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
+  background-color: black;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border: 2px solid;
+}
+nav h2{
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: black;
+}
+nav input{
+  border-radius: 5px;
+  height: 40px;
+  width: 240px ;
+  background-color: white
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-between;
+  
+  
+  
+}
+.card{
+ width: 30%;
+ height: 600px;
+}
+.card img{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px ;
+  
+}
+.bigmodal{
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.514);
+  width: 100%;
+  height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.modal{
+  background-color: white;
+    width: 25%;
+    padding: 100px;
+    border-radius: 10px;
+    position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal button:first-child{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.6rem;
+  background-color: white;
+}
+.modal h2{
+  padding-bottom: 20px;
+  font-size: 1.9rem;
+  background-color: white;
+}
+.modal  h3{
+  font-size: 1.5rem;
+  background-color: white;
+}
+.modal p{
+  padding-top: 20px;
+  background-color: white;
 }
