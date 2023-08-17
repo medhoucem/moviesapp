@@ -4,6 +4,10 @@ import Navbar from './components/Navbar';
 import MoviesList from './components/MoviesList';
 import { useState } from 'react';
 import AddModal from './components/AddModal';
+import Login from './components/Login';
+import { Routes } from 'react-router-dom';
+import {Route} from 'react-router-dom';
+import Home from './components/Home';
 
 function App() {
   const [movies, setmovies] = useState([
@@ -127,8 +131,10 @@ function App() {
 
   return (
     <div className="App">
-     <Navbar setmovies={setmovies} movies={movies} setsearch={setsearch} />
-     <MoviesList search={search} movies ={movies}/>  
+      <Routes>
+        <Route path='/home' element={<Home/>}></Route>
+        <Route path='/' element ={<Login/>}> </Route>
+     </Routes>
     </div>
   );
 }

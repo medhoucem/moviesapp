@@ -4,9 +4,17 @@
  
 
 }
+body{
+  background-color: darkslategray;
+}
 
 .navbar{
   width: 100%;
+}
+.navbar2 button{
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
 }
 nav{
   background-color: black;
@@ -32,7 +40,7 @@ nav input{
   flex-wrap: wrap;
   gap: 1em;
   justify-content: space-between;
-  
+  padding: 20px 20px;
   
   
 }
@@ -85,4 +93,31 @@ nav input{
 .modal p{
   padding-top: 20px;
   background-color: white;
+}
+.login{
+  background-color: bisque;
+  width: 100wh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.log-box{
+width: 25%;
+padding: 100px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+}
+.log-box button{
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px; ;
+}
+.log-box input{
+  padding: 12px 20px;
+  border-radius: 4px;
 }
